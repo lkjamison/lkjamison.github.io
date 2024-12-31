@@ -47,32 +47,37 @@
         /* Styling for the main content */
         .content {
             padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
         }
 
-        .content .quote {
+        .quote {
             font-style: italic;
             margin-bottom: 10px;
             font-size: 1.2em;
+            width: 45%;
+            text-align: right;
         }
 
-        .content .citation {
+        .quote span {
             display: block;
             margin-top: 10px;
             font-size: 0.9em;
             color: gray;
         }
 
-        .content .description {
+        .description {
             font-size: 1em;
             color: #333;
+            width: 45%;
         }
     </style>
 </head>
 <body>
     <!-- Black banner with navigation -->
     <div class="banner">
-        <h1>Laura Jamison</h1>
+        <h1>Your Name</h1>
         <div class="nav-buttons">
             <a href="about.html">About Me</a>
             <a href="tutorials.html">Tutorials</a>
@@ -81,9 +86,9 @@
 
     <!-- Main content of the page -->
     <div class="content">
-        <div class="quote">The tasks I would set for you?
-                Beware how bias lurks!
-                Weigh well the options that are yours
+        <div class="quote">The tasks I would set for you?<br>
+                Beware how bias lurks!<br>
+                Weigh well the options that are yours<br>
                 Pursuing Nature's quirks.
                 <span class="citation">- John Nesselroade, Psychologists Doing Empirical Research - Selection at Work! (2011)</span>
         <div class="description">
