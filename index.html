@@ -45,37 +45,32 @@
         }
 
         /* Styling for the main content */
-        .content {
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            text-align: left;
+        .container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px;
+          height: 100vh; /* Full viewport height */
+          box-sizing: border-box;
         }
-
+    
         .quote {
-            font-style: italic;
-            margin-bottom: 10px;
-            font-size: 1.2em;
-            width: 45%;
-            text-align: right;
+          flex: 1;
+          padding: 20px;
+          font-size: 1.2em;
+          line-height: 1.5;
         }
-
-        .quote span {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.9em;
-            color: gray;
+    
+        .image {
+          flex: 1;
+          text-align: right;
+          padding: 20px;
         }
-
-        .description {
-            font-size: 1em;
-            color: #333;
-            width: 45%;
-        }
-        .grid-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
+    
+        .image img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px; /* Optional: Rounded corners */
         }
     </style>
 </head>
@@ -90,14 +85,19 @@
     </div>
 
     <!-- Main content of the page -->
-    <div class="grid-container">
-        <img src="Image 1.jpg" width="300" height="200" alt="Image">
-        <p>
-        <div class="quote">The tasks I would set for you?<br>
+    <div class="container">
+        <div class="quote">
+          <blockquote>
+            "The tasks I would set for you?<br>
                 Beware how bias lurks!<br>
                 Weigh well the options that are yours<br>
-                Pursuing Nature's quirks.
-                <span class="citation">- John Nesselroade, Psychologists Doing Empirical Research - Selection at Work! (2011)</span></p>
-    </div>
+                Pursuing Nature's quirks."
+                <span class="citation">- John Nesselroade, Psychologists Doing Empirical Research - Selection at Work! (2011)</span>
+          </blockquote>
+        </div>
+        <div class="image">
+          <img src="Image 1.jpg" alt="Description of the image">
+        </div>
+      </div>
 </body>
 </html>
